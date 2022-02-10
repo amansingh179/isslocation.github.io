@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+   
+    margin: 5px;
+    width: 100vw;
+    height: 70vh;
+
+ 
+}
+.container{
+    background-color: black;
+    
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    color: #ffff;
+
+    padding: 0;
+}
+
+#small {
+    font-size: 27px;
+    color: #ffff;
+    text-align: center;
+
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    color: #fff;
+}
+#foot{
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+}

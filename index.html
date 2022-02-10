@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS location</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="nav">Where the ISS at?</h1>
+        <p class="nav" id="small">Updating in every 4 seconds...</p>
+        <p class="nav">
+            Longitude: <span id="long"></span>
+            Latitude : <span id="lat"></span>
+        </p>
+    </div>
+    <div id="map"></div>
+
+    <footer id="foot">Created by Aman. &copy 2022</footer>
+
+</body>
+<script src="index.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYW1hbnNpbmdoMTAxNzkiLCJhIjoiY2t6YXRxMm5rMGZibjJvczZidWF0djNnciJ9.DfcLRBiuzTblRkj9rvvJsw';
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/dark-v10', // style URL
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 0.9 // starting zoom
+    });
+</script>
+
+</html>
